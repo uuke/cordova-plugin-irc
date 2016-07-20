@@ -1,4 +1,4 @@
-package xwang.cordova.irc;
+package uuke.cordova.irc;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaArgs;
