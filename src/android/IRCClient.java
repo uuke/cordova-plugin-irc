@@ -1,4 +1,4 @@
-package uuke.cordova.irc;
+package xwang.cordova.irc;
 
 public class IRCClient {
   // single irc_session

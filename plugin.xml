@@ -5,8 +5,8 @@
   <description>A cordova plugin, a JS version of libircclient</description>
   <licience>MIT</licience>
   <keywords>cordova,irc,libircclient</keywords>
-  <repo>https://github.com/uuke/cordova-plugin-irc.git</repo>
-  <issue>https://github.com/uuke/cordova-plugin-irc/issues</issue>
+  <repo>https://github.com/hkizuna/cordova-plugin-irc.git</repo>
+  <issue>https://github.com/hkizuna/cordova-plugin-irc/issues</issue>
 
   <!-- required cordova version -->
   <engines>
@@ -42,14 +42,14 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="IRC">
-        <param name="android-package" value="uuke.cordova.irc.IRC"/>
+        <param name="android-package" value="xwang.cordova.irc.IRC"/>
         <!-- <param name="onload" value="true" /> -->
       </feature>
     </config-file>
 
     <!-- plugin source code -->
-    <source-file src="src/android/IRC.java" target-dir="src/uuke/cordova/irc" />
-    <source-file src="src/android/IRCClient.java" target-dir="src/uuke/cordova/irc" />
+    <source-file src="src/android/IRC.java" target-dir="src/xwang/cordova/irc" />
+    <source-file src="src/android/IRCClient.java" target-dir="src/xwang/cordova/irc" />
     <!-- libircclient-jni -->
     <source-file src="src/android/libs/arm64-v8a/libircclient-jni.so" target-dir="libs/arm64-v8a" />
     <source-file src="src/android/libs/armeabi/libircclient-jni.so" target-dir="libs/armeabi" />
