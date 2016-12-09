@@ -162,7 +162,15 @@ CDVIRC *refToSelf;
   }
   NSString *content = [arguments objectAtIndex:0];
   const char *cc_channel = [channel cStringUsingEncoding:encoding];
+  if (cc_channel == nil) {
+    [self failWithCallbackId:command.callbackId withMessage:@"failed to encode channel"];
+    return;
+  }
   const char *cc_message = [content cStringUsingEncoding:encoding];
+  if (cc_message == nil) {
+    [self failWithCallbackId:command.callbackId withMessage:@"failed to encode message"];
+    return;
+  }
   if (irc_cmd_msg(session, cc_channel, cc_message)) {
     [self failWithCallbackId:command.callbackId withMessage:@"fail to send message"];
   }
